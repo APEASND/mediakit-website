@@ -1,0 +1,335 @@
+export interface FitnessEvent {
+  id: string;
+  title: string;
+  location: string;
+  dates: string;
+  hostType: string;
+  price: string;
+  priceUnit?: string;
+  rating: number;
+  reviews?: number;
+  image: string;
+  badge?: string;
+  category?: string;
+}
+
+export interface Category {
+  name: string;
+  count: number;
+  image: string;
+}
+
+export const popularEvents: FitnessEvent[] = [
+  {
+    id: "hiit-shoreditch",
+    title: "HIIT Class in Shoreditch",
+    location: "Shoreditch, London",
+    dates: "12–14 Jun",
+    hostType: "Certified trainer",
+    price: "£25",
+    rating: 4.91,
+    image: "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=600&h=400&fit=crop",
+    badge: "Guest favourite",
+  },
+  {
+    id: "yoga-camden",
+    title: "Sunrise Yoga in Camden",
+    location: "Camden Town, London",
+    dates: "2–4 Oct",
+    hostType: "Certified trainer",
+    price: "£18",
+    rating: 4.92,
+    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&h=400&fit=crop",
+    badge: "Guest favourite",
+  },
+  {
+    id: "boxing-hackney",
+    title: "Boxing Bootcamp in Hackney",
+    location: "Hackney, London",
+    dates: "14–16 Aug",
+    hostType: "Pro coach",
+    price: "£30",
+    rating: 5.0,
+    image: "https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?w=600&h=400&fit=crop",
+    badge: "Guest favourite",
+  },
+  {
+    id: "crossfit-brixton",
+    title: "CrossFit Session in Brixton",
+    location: "Brixton, London",
+    dates: "21–23 Aug",
+    hostType: "Certified trainer",
+    price: "£22",
+    rating: 4.97,
+    image: "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=600&h=400&fit=crop",
+    badge: "Guest favourite",
+  },
+  {
+    id: "pilates-chelsea",
+    title: "Reformer Pilates in Chelsea",
+    location: "Chelsea, London",
+    dates: "18–20 Sept",
+    hostType: "Certified trainer",
+    price: "£35",
+    rating: 4.84,
+    image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&h=400&fit=crop",
+    badge: "Guest favourite",
+  },
+  {
+    id: "spin-wandsworth",
+    title: "Spin Class in Wandsworth",
+    location: "Wandsworth, London",
+    dates: "12–14 Jun",
+    hostType: "Certified trainer",
+    price: "£20",
+    rating: 5.0,
+    image: "https://images.unsplash.com/photo-1534787238916-9ba6764efd4f?w=600&h=400&fit=crop",
+    badge: "Guest favourite",
+  },
+  {
+    id: "kickboxing-camden",
+    title: "Kickboxing in Camden Town",
+    location: "Camden Town, London",
+    dates: "7–9 Aug",
+    hostType: "Business host",
+    price: "£28",
+    rating: 4.92,
+    image: "https://images.unsplash.com/photo-1615117972428-28de87cf8494?w=600&h=400&fit=crop",
+    badge: "Guest favourite",
+  },
+];
+
+export const fitnessCategories: Category[] = [
+  {
+    name: "HIIT & Cardio",
+    count: 23,
+    image: "https://images.unsplash.com/photo-1434682881908-b43d0467b798?w=400&h=300&fit=crop",
+  },
+  {
+    name: "Yoga & Pilates",
+    count: 19,
+    image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400&h=300&fit=crop",
+  },
+  {
+    name: "Boxing & MMA",
+    count: 15,
+    image: "https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?w=400&h=300&fit=crop",
+  },
+  {
+    name: "Outdoor Bootcamps",
+    count: 15,
+    image: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&h=300&fit=crop",
+  },
+  {
+    name: "Running Clubs",
+    count: 11,
+    image: "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=400&h=300&fit=crop",
+  },
+  {
+    name: "Strength Training",
+    count: 10,
+    image: "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=400&h=300&fit=crop",
+  },
+  {
+    name: "Dance Fitness",
+    count: 6,
+    image: "https://images.unsplash.com/photo-1524594152303-9fd13543fe6e?w=400&h=300&fit=crop",
+  },
+  {
+    name: "Swimming",
+    count: 3,
+    image: "https://images.unsplash.com/photo-1530549387789-4c1017266635?w=400&h=300&fit=crop",
+  },
+];
+
+export const popularExperiences: FitnessEvent[] = [
+  {
+    id: "park-hiit",
+    title: "London Park HIIT Workout",
+    location: "Hyde Park, London",
+    hostType: "Business host",
+    dates: "",
+    price: "£15",
+    priceUnit: "/ person",
+    rating: 4.98,
+    reviews: 1700,
+    image: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&h=400&fit=crop",
+    badge: "Popular",
+  },
+  {
+    id: "thames-run",
+    title: "Thames Path Running Tour",
+    location: "Southbank, London",
+    hostType: "Individual host",
+    dates: "",
+    price: "£12",
+    priceUnit: "/ person",
+    rating: 4.93,
+    image: "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=600&h=400&fit=crop",
+    badge: "Popular",
+  },
+  {
+    id: "ring-boxing",
+    title: "Boxing Ring Experience",
+    location: "Bethnal Green, London",
+    hostType: "Business host",
+    dates: "",
+    price: "£35",
+    priceUnit: "/ person",
+    rating: 4.97,
+    image: "https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?w=600&h=400&fit=crop",
+    badge: "Popular",
+  },
+  {
+    id: "rooftop-yoga",
+    title: "Rooftop Yoga & Brunch",
+    location: "Shoreditch, London",
+    hostType: "Individual host",
+    dates: "",
+    price: "£28",
+    priceUnit: "/ person",
+    rating: 4.96,
+    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&h=400&fit=crop",
+    badge: "Popular",
+  },
+  {
+    id: "street-food-run",
+    title: "5K Run & Street Food Tour",
+    location: "Camden, London",
+    hostType: "Business host",
+    dates: "",
+    price: "£22",
+    priceUnit: "/ person",
+    rating: 4.95,
+    image: "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=600&h=400&fit=crop",
+    badge: "Popular",
+  },
+  {
+    id: "calisthenics",
+    title: "Calisthenics in the Park",
+    location: "Victoria Park, London",
+    hostType: "Individual host",
+    dates: "",
+    price: "£10",
+    priceUnit: "/ person",
+    rating: 4.9,
+    image: "https://images.unsplash.com/photo-1598971639058-fab3c3109a00?w=600&h=400&fit=crop",
+    badge: "Popular",
+  },
+  {
+    id: "sunrise-paddle",
+    title: "Sunrise Paddleboard Fitness",
+    location: "Canary Wharf, London",
+    hostType: "Business host",
+    dates: "",
+    price: "£40",
+    priceUnit: "/ person",
+    rating: 4.99,
+    image: "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=600&h=400&fit=crop",
+    badge: "Popular",
+  },
+];
+
+export const featuredStudios: FitnessEvent[] = [
+  {
+    id: "studio-1",
+    title: "FitBox Studio Shoreditch",
+    location: "Shoreditch",
+    dates: "12–14 Jun",
+    hostType: "",
+    price: "£120",
+    rating: 4.8,
+    reviews: 342,
+    image: "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=600&h=400&fit=crop",
+  },
+  {
+    id: "studio-2",
+    title: "ZenFlow Yoga Chelsea",
+    location: "Chelsea",
+    dates: "Any dates",
+    hostType: "",
+    price: "£95",
+    rating: 4.9,
+    reviews: 567,
+    image: "https://images.unsplash.com/photo-1588286840104-8957b019727f?w=600&h=400&fit=crop",
+  },
+  {
+    id: "studio-3",
+    title: "IronWorks Gym Brixton",
+    location: "Brixton",
+    dates: "Weekdays",
+    hostType: "",
+    price: "£80",
+    rating: 4.7,
+    reviews: 234,
+    image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&h=400&fit=crop",
+  },
+  {
+    id: "studio-4",
+    title: "The Boxing Yard",
+    location: "Hackney",
+    dates: "Mon–Sat",
+    hostType: "",
+    price: "£110",
+    rating: 4.85,
+    reviews: 189,
+    image: "https://images.unsplash.com/photo-1517438322307-e67111335449?w=600&h=400&fit=crop",
+  },
+  {
+    id: "studio-5",
+    title: "Cycle House Wandsworth",
+    location: "Wandsworth",
+    dates: "Any dates",
+    hostType: "",
+    price: "£75",
+    rating: 4.6,
+    reviews: 421,
+    image: "https://images.unsplash.com/photo-1534787238916-9ba6764efd4f?w=600&h=400&fit=crop",
+    badge: "Guest favourite",
+  },
+  {
+    id: "studio-6",
+    title: "Peak Performance Camden",
+    location: "Camden Town",
+    dates: "Daily",
+    hostType: "",
+    price: "£90",
+    rating: 4.75,
+    reviews: 312,
+    image: "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=600&h=400&fit=crop",
+  },
+  {
+    id: "studio-7",
+    title: "Flex & Flow Islington",
+    location: "Islington",
+    dates: "Weekends",
+    hostType: "",
+    price: "£85",
+    rating: 4.92,
+    reviews: 156,
+    image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&h=400&fit=crop",
+  },
+];
+
+export const eventDetail = {
+  id: "park-hiit",
+  title: "London Park HIIT Workout",
+  description:
+    "Experience London's REAL FITNESS scene, guided by a certified personal trainer. Join us for an intense, fun, and rewarding HIIT session in one of London's most beautiful parks.",
+  rating: 4.98,
+  reviews: 1700,
+  location: "Hyde Park, London",
+  category: "Fitness",
+  hostName: "Alex or Jamie",
+  hostRole: "Fitness session led by a certified PT",
+  venueName: "Hyde Park Bandstand",
+  venueAddress: "Hyde Park, London",
+  price: 67,
+  cancellation: "Free cancellation · Up to 1 day before start time",
+  images: [
+    "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&h=600&fit=crop",
+    "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=800&h=600&fit=crop",
+  ],
+};
