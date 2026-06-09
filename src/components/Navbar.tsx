@@ -93,6 +93,11 @@ function SearchBar() {
           <span className="text-xs font-bold text-jarvis-dark">Who</span>
           <span className="text-sm text-jarvis-gray">Add guests</span>
         </button>
+        <div className="w-px h-8 bg-gray-300" />
+        <button className="flex-1 flex flex-col items-start px-6 py-3 hover:bg-gray-100 transition">
+          <span className="text-xs font-bold text-jarvis-dark">How Much</span>
+          <span className="text-sm text-jarvis-gray">What&apos;s the cost</span>
+        </button>
         <button className="flex items-center justify-center w-12 h-12 bg-jarvis-pink hover:bg-jarvis-pink-hover rounded-full mr-2 transition">
           <SearchIcon />
         </button>
